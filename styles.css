@@ -4,7 +4,6 @@
 
 header{
     background-color: grey;
-    grid-column: 1/4;
 }
 
 body{
@@ -12,22 +11,19 @@ body{
     width: 100%;
 }
 
-.body-container{
-    display: grid;
-    grid-template-columns: minmax(150px, 25%) 1fr;
-}
+
 
 main{
     margin: auto;
 }
 
-aside {
+/* aside {
     background-color: #f4f4f4;
-    /* position: fixed; */
+    /* position: fixed; 
     height: 100%;
     width: 200px;
     padding: 20px;
-}
+} */
 
 nav ul {
     list-style: none;
@@ -47,8 +43,9 @@ nav ul {
 .signature-item{
     max-width: 800px;
     min-height: 300px;
-    background-color: blueviolet;
+    background-color: lightgray;
     border-radius: 5px;
-    margin: 10px;
+    margin: auto;
+    padding: 10px;
 }
 
