@@ -1,14 +1,12 @@
-*{
-    font-family:Arial,sans-serif;
-}
 
 header{
     background-color: grey;
 }
 
 body{
-    background-color: green;
+    background-color: #1c132d;
     width: 100%;
+    color: #f0f0f0;
 }
 
 
@@ -49,3 +47,92 @@ nav ul {
     padding: 10px;
 }
 
+/* ELEMENT 1 */
+
+.element1-container{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: #1c132d;
+    padding: 50px 0;
+}
+
+
+.motion-text--container{
+    background-color: yellow;
+}
+
+/* .motion-text{
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(240, 240, 240, 0.5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    color: #1c132d;
+    padding: 0.5em 0;
+    transition: text-indent 17s ease-out;
+}
+
+.motion-text:hover{
+    text-indent: -700px;
+} */
+
+.motion-text--container{
+    height: 50px;
+    white-space: nowrap;
+
+}
+
+.motion-text1, .motion-text2, .motion-text3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #1c132d;
+    display: inline-block;
+
+}
+
+.motion-text1:hover{
+    animation: roll 250s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes roll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.motion-text2:hover{
+    animation: roll 50s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes roll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.motion-text3:hover{
+    animation: roll 150s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes roll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
