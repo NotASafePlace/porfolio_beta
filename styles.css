@@ -51,6 +51,7 @@ nav ul {
 
 .element1-container{
     background-color: #f0f0f0;
+    width: auto;
     border-radius: 5px;
     color: #1c132d;
     padding: 50px 0;
@@ -136,3 +137,64 @@ nav ul {
       transform: translateX(-100%);
     }
   }
+
+  /* ELEMENT 2 */
+.element2-container{
+    height: 700px;
+    width: auto;
+    background-color: #f0f0f0;
+    margin-inline: 50px;
+    padding: 200px 50px;
+}
+
+.element2-object{
+    background-color: #1c132d;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+}
+
+@keyframes bounceAround {
+    
+    0%{ 
+        transform: translate(5px, 5px);
+    }
+
+    36%{
+        transform: translate(450px, 75px);
+    }
+
+    56%{
+        transform: translate(150px, 650px);
+    }
+
+    73%{
+        transform: translate(500px, 650px);
+
+    }
+
+    100%{
+        transform: translate(5px, 5px);
+
+    }
+}
+
+.element2-object{
+    transform: translate(5px, 5px);
+    /* transition: transform 3s ease; */
+}
+
+.element2-container:hover .element2-object{
+    animation: bounceAround 4s infinite ;
+}
+
+.stripe{
+    background-color: #1c132d;
+    width: 100%;
+    height: 35%;
+    margin: 160px -100px;
+    font-weight: 800;
+    text-align: center;
+    font-size: 7.65rem;
+    padding: 25px 0;
+}
