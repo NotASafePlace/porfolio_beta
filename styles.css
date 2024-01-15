@@ -1,18 +1,33 @@
+*{
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Manrope', sans-serif;    
+}
+
+:root{
+    --font-h1:  800;
+    --font-h2:  200;
+    --font-h3:  100;
+}
+
+  
 
 header{
-    background-color: grey;
+    background-color: #1c132d;
 }
 
 body{
     background-color: #1c132d;
-    width: 100%;
     color: #f0f0f0;
+    max-width: 1200px;
+    overflow-x: hidden;
+    margin: 50px 20px;
+
 }
 
 
 
-main{
-    margin: auto;
+.main{
+    /* margin-inline: auto; */
 }
 
 /* aside {
@@ -28,39 +43,199 @@ nav ul {
     padding: 0;
 }
 
-.signature{
-    text-align: center;
+ /* ------ ELEMENT 3 ----- */
+ .newsletter-container1, .newsletter-container2, .newsletter-container3{
+    background-color: #494849bb;
+    border-radius: 15px;
+    width: 93%;
+    padding: 1.7em;
+    margin: 5px;
+ }
+
+ .newsletter label{
+    color: grey;
+    font-size: 0.8rem;
+ }
+
+ .newsletter #hero-btn{
+    color: #edeaea;
+    background-color: rgb(137, 225, 65);
+    padding: 7px 30px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 800;
+    text-shadow: 2px 0.5px 5px #0a0a0a;
+    cursor: pointer;
+ }
+
+ .newsletter input{
+    padding: 7px 30px;
+    border: none; 
+    border-radius: 12px;
+ }
+
+ .newsletter input:focus{
+    outline: none;
+ }
+
+ .newsletter #hero-btn:hover{
+    box-shadow: 2px 2px 3px 5px #1c132d;
+    /* transition: 0.25s; */
+
+ }
+
+ .newsletter #hero-btn:focus{
+    /* box-shadow: inset 0px 3px 3px 3px #1c132d; */
+    box-shadow: 2px 2px 3px 3px #2c1e47;
+    background-color: rgb(134, 216, 67);
+ }
+  /* -- newsletter 1 -- */
+
+
+
+ .newsletter-container1{
+    display: flex;
+ }
+
+ .newsletter-container1 #hero-btn{
+    display: flex;
+    margin: 5px 0;
 }
 
-.signature-item--2{
-    margin: 50px 20px;
+  /* -- newsletter 2 -- */
+
+.newsletter-container2 form{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-container2 input{
+    width: 60%;
+    margin: 5px 5px 0 0;
+    /* box-shadow: inset -2px -2px 4px #0a0a0a; */
+    box-shadow:  0 0 2px rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-container2 #hero-btn{
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.7);
+
+}
+
+.newsletter-container2 input:focus{
+    box-shadow: 2px 2px 3px 5px #1c132d;
+}
+
+  /* -- newsletter 3 -- */
+
+  .newsletter-container3{
+    display: flex;
+    height: 3em;
+  }
+
+@keyframes textLoop {
+    from{
+        transform: translateX(3%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.newsletter-container3 .loop-text{
+    max-width: 55%;
+    background-color: red;
+    white-space: nowrap;
+    /* overflow: hidden; */
+    animation: textLoop 5s linear infinite;
+}
+
+
+  .newsletter-container3 form{
+    display: flex;
+    margin: 5px;
+  }
+
+  .newsletter-container3 #hero-btn{
+    margin-left: 5px;
+}
+
+ /* ------ ELEMENT 2 ----- */
+
+ .element2-container{
+    height: 700px;
+    width: 100%;
     background-color: #f0f0f0;
+    margin-left: 50px;
+    padding: 200px 50px;
 }
 
+.element2-object{
+    background-color: #1c132d;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+}
 
-.signature-item{
-    max-width: 800px;
-    min-height: 300px;
-    background-color: lightgray;
-    border-radius: 5px;
-    margin: auto;
-    padding: 10px;
+@keyframes bounceAround {
+    
+    0%{ 
+        transform: translate(5px, 5px);
+    }
+
+    36%{
+        transform: translate(450px, 75px);
+    }
+
+    56%{
+        transform: translate(150px, 650px);
+    }
+
+    73%{
+        transform: translate(500px, 650px);
+
+    }
+
+    100%{
+        transform: translate(5px, 5px);
+
+    }
+}
+
+.element2-object{
+    transform: translate(5px, 5px);
+    /* transition: transform 3s ease; */
+}
+
+.element2-container:hover .element2-object{
+    animation: bounceAround 4s infinite ;
+}
+
+.stripe{
+    background-color: #1c132d;
+    width: 77.8%;
+    height: 35%;
+    margin: 160px -100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: var(--font-h2);
+    padding: 25px 0;
 }
 
 /* ELEMENT 1 */
 
 .element1-container{
     background-color: #f0f0f0;
-    width: auto;
+    width: 100%;
     border-radius: 5px;
     color: #1c132d;
     padding: 50px 0;
 }
 
 
-.motion-text--container{
+/* .motion-text--container{
     background-color: yellow;
-}
+} */
 
 /* .motion-text{
     width: 100%;
@@ -86,7 +261,6 @@ nav ul {
 }
 
 .motion-text1, .motion-text2, .motion-text3{
-    font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-style: italic;
     font-size: 3rem;
@@ -138,63 +312,18 @@ nav ul {
     }
   }
 
-  /* ELEMENT 2 */
-.element2-container{
-    height: 700px;
-    width: auto;
-    background-color: #f0f0f0;
-    margin-inline: 50px;
-    padding: 200px 50px;
+ 
+ /* ---- SIGNATURES ----- */
+.signature-container{
+    color: #1c132d;
+    margin-inline: auto;
 }
 
-.element2-object{
-    background-color: #1c132d;
-    border-radius: 50%;
-    width: 37px;
-    height: 37px;
-}
 
-@keyframes bounceAround {
-    
-    0%{ 
-        transform: translate(5px, 5px);
-    }
-
-    36%{
-        transform: translate(450px, 75px);
-    }
-
-    56%{
-        transform: translate(150px, 650px);
-    }
-
-    73%{
-        transform: translate(500px, 650px);
-
-    }
-
-    100%{
-        transform: translate(5px, 5px);
-
-    }
-}
-
-.element2-object{
-    transform: translate(5px, 5px);
-    /* transition: transform 3s ease; */
-}
-
-.element2-container:hover .element2-object{
-    animation: bounceAround 4s infinite ;
-}
-
-.stripe{
-    background-color: #1c132d;
-    width: 100%;
-    height: 35%;
-    margin: 160px -100px;
-    font-weight: 800;
-    text-align: center;
-    font-size: 7.65rem;
-    padding: 25px 0;
+.signature-item{
+    max-width: 100%;
+    min-height: 300px;
+    background-color: lightgray;
+    margin-inline: auto;
+    padding: 20px;
 }
