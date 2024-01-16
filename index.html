@@ -19,6 +19,62 @@
 
         <section class="element-container">
           <h2>Elements Practice</h2>
+          <!-- -- Element 5 - ToggleList -->
+          <h3>Element 5 - Night Mode Toggle</h3>
+          <div class="night-mode-toggle">
+            <div>
+              <h4>Method 1 - HTML only</h4>
+              <input type="checkbox" id="darkMode">
+              <label for="darkMode">Lights off</label>
+              <div class="day-mode">
+                <h4>I am a Title</h4>
+                <p>I am the important text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut illum, earum quasi unde distinctio alias rem totam a perspiciatis velit deserunt rerum fugit aliquam corporis saepe praesentium asperiores mollitia!
+                </p>
+              </div>
+              <div class="night-mode">
+                <h4>I am a Title</h4>
+                <p>I am the important text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut illum, earum quasi unde distinctio alias rem totam a perspiciatis velit deserunt rerum fugit aliquam corporis saepe praesentium asperiores mollitia!
+                </p>
+              </div>
+              <div>
+                <h4>Method 2 - with script</h4>
+                <div>
+                  <button class="toggle-button-on" onclick="toggleNightMode()">Lights off</button>
+                    <div class="day-mode2">
+                      <h4>I am a Title</h4>
+                      <p>I am the important text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut illum, earum quasi unde distinctio alias rem totam a perspiciatis velit deserunt rerum fugit aliquam corporis saepe praesentium asperiores mollitia!
+                      </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <script>
+            function toggleNightMode(){
+              console.log('Function is called');
+              document.querySelector('.day-mode2').classList.toggle('night-mode2');
+              document.querySelector('.toggle-button-on').classList.toggle('toggle-button-off');
+              if (document.querySelector('.day-mode2').classList.contains('night-mode2')){
+                document.querySelector('.toggle-button-on').textContent  ="Lights on";
+              }else{
+                document.querySelector('.toggle-button-on').textContent  ="Lights off";
+              }
+            }
+          </script>
+
+          <!-- -- Element 4 - ToggleList -->
+
+          <h3>Element 4 - Toggle List</h3>
+          <div class="toggle-list">
+            <input type="checkbox" id="toggleList">
+            <label for="toggleList">Hide Them</label>
+              <ul class="hidden-list">
+                <li>Hide me 1</li>
+                <li>Hide me 2</li>
+                <li>Hide me 3</li>
+                <li>Hide me 4</li>
+              </ul>
+          </div>
+
           <!-- -- Element 3 - Newsletter -- -->
           <div class="newsletter">
             <h3>Element 3 - Newsletter</h3>
@@ -27,7 +83,7 @@
                   <p>Stay updated with the latest news, events, and exclusive offers by subscribing to our newsletter. Enter your email address below:</p>
                   <form action="#" method="post">
                     <label for="email">(label for texting)</label>
-                    <input type="email" placeholder="Here's my fav email"/>
+                    <input type="email" placeholder="Enter your fav email address"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="This doesn't look like an Email address, bro."/>
                     <button id="hero-btn">Subscribe</button id="hero-btn">
                   </form>
                 </div>
@@ -38,21 +94,24 @@
                       <label for="email">(label for texting)</label>
                     </div>
                     <div>
-                      <input type="email" placeholder="Here's my fav email"/>
+                      <input type="email" placeholder="Enter your fav email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ oninput="setCustomValidity('')" 
+                      oninvalid="setCustomValidity('This doesn\'t look like an Email address, bro.')" required  />
                       <button id="hero-btn">Keep me updated</button id="hero-btn">
                     </div>
                   </form>
                 </div>
                 <div class="newsletter-container3">
-                  <div class="loop-text">
-                    <p>Stay updated with the latest news, events, and exclusive offers by subscribing to our newsletter. Enter your email address below:</p>
-                  </div>
-                  <div>
-                    <form action="#" method="post">
-                      <label for="email"></label>
-                      <input type="email" placeholder="Here's my fav email"/>
-                      <button id="hero-btn">Subscribe</button id="hero-btn">
-                    </form>
+                  <div class="newsletter-container3--subcontainer">
+                    <div class="loop-text">
+                      <p>Stay updated with the latest news, events, and exclusive offers by subscribing to our newsletter. Enter your email address below:</p>
+                    </div>
+                    <div>
+                      <form action="#" method="post">
+                        <label for="email"></label>
+                        <input type="email" placeholder="Enter your fav email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="This doesn't look like an Email address, bro."/>
+                        <button id="hero-btn">Subscribe</button id="hero-btn">
+                      </form>
+                    </div>
                   </div>
                 </div>
           </div>

@@ -24,23 +24,93 @@ body{
 
 }
 
+ /* ------ ELEMENT 5 ----- */
 
+ /* ------ method 1 ------ */
+ .night-mode-toggle{
+    background-color: #2c1e47;
+    border-radius: 10px;
+    padding: 30px;
+ }
 
-.main{
-    /* margin-inline: auto; */
+.night-mode-toggle input[type="checkbox"]{
+    margin: 15px 5px;
+    width: 20px;
+    height: 20px;
 }
 
-/* aside {
-    background-color: #f4f4f4;
-    /* position: fixed; 
-    height: 100%;
-    width: 200px;
-    padding: 20px;
-} */
 
-nav ul {
-    list-style: none;
-    padding: 0;
+ .day-mode{
+    background-color: #f0f0f0;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: #0a0a0a;
+    display:block;
+}
+
+.night-mode{
+    background-color: #0a0a0a;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: #edeaea;
+    display:none;
+
+}
+
+#darkMode:checked ~ .night-mode{
+    display: block;
+
+}
+
+#darkMode:checked ~ .day-mode{
+    display: none;
+}
+
+ /* ------ method 2 ------ */
+
+.day-mode2{
+    background-color: #f0f0f0;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: #0a0a0a;
+    transition: 0.3s;
+}
+
+.night-mode2.day-mode2 {
+    background-color: #0a0a0a;
+    color: #edeaea;
+}
+
+.toggle-button-on{
+    font-size: 1rem;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 15px;
+    margin: 15px 7px;
+    background-color: #f0f0f0;
+    color: #0a0a0a;
+    transition: 0.3s;
+}
+
+
+.toggle-button-on.toggle-button-off{
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+}
+
+ /* ------ ELEMENT 4 ----- */
+
+ .toggle-list{
+    background-color: #2c1e47;
+    padding: 0.7em 1.2em;
+ }
+
+.hidden-list{
+    display: block;
+ }
+
+ #toggleList:checked ~ .hidden-list{
+    display: none;
 }
 
  /* ------ ELEMENT 3 ----- */
@@ -48,9 +118,18 @@ nav ul {
     background-color: #494849bb;
     border-radius: 15px;
     width: 93%;
-    padding: 1.7em;
-    margin: 5px;
+    margin: 7px;
  }
+
+ .newsletter-container1, .newsletter-container2{
+    padding: 1.7em;
+ }
+
+
+.newsletter-container1 form{
+    margin-left: 10px;
+
+}
 
  .newsletter label{
     color: grey;
@@ -128,13 +207,19 @@ nav ul {
   /* -- newsletter 3 -- */
 
   .newsletter-container3{
+    height: 2em;
+    padding: 1em 1.7em;
+  }
+
+  .newsletter-container3--subcontainer{
     display: flex;
-    height: 3em;
+    margin: 3px auto;
+    line-height: 0%;
   }
 
 @keyframes textLoop {
     from{
-        transform: translateX(3%);
+        transform: translateX(0%);
     }
     to{
         transform: translateX(-100%);
@@ -142,21 +227,25 @@ nav ul {
 }
 
 .newsletter-container3 .loop-text{
-    max-width: 55%;
-    background-color: red;
+    flex-basis: 65%;
     white-space: nowrap;
-    /* overflow: hidden; */
-    animation: textLoop 5s linear infinite;
+    overflow: hidden;
+}
+
+.newsletter-container3 .loop-text p{
+    animation: textLoop 7s linear infinite;
 }
 
 
   .newsletter-container3 form{
     display: flex;
-    margin: 5px;
+    flex-basis: 35%;
+    margin-left: 10px;
   }
 
+
   .newsletter-container3 #hero-btn{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
  /* ------ ELEMENT 2 ----- */
