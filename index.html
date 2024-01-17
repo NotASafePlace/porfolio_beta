@@ -19,33 +19,59 @@
 
         <section class="element-container">
           <h2>Elements Practice</h2>
-          <!-- -- Element 5 - ToggleList -->
-          <h3>Element 5 - Night Mode Toggle</h3>
-          <div class="night-mode-toggle">
-            <div>
-              <h4>Method 1 - HTML only</h4>
-              <input type="checkbox" id="darkMode">
-              <label for="darkMode">Lights off</label>
-              <div class="day-mode">
-                <h4>I am a Title</h4>
-                <p>I am the important text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut illum, earum quasi unde distinctio alias rem totam a perspiciatis velit deserunt rerum fugit aliquam corporis saepe praesentium asperiores mollitia!
-                </p>
-              </div>
-              <div class="night-mode">
-                <h4>I am a Title</h4>
-                <p>I am the important text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut illum, earum quasi unde distinctio alias rem totam a perspiciatis velit deserunt rerum fugit aliquam corporis saepe praesentium asperiores mollitia!
-                </p>
-              </div>
-              <div>
-                <h4>Method 2 - with script</h4>
-                <div>
-                  <button class="toggle-button-on" onclick="toggleNightMode()">Lights off</button>
-                    <div class="day-mode2">
-                      <h4>I am a Title</h4>
-                      <p>I am the important text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut illum, earum quasi unde distinctio alias rem totam a perspiciatis velit deserunt rerum fugit aliquam corporis saepe praesentium asperiores mollitia!
-                      </p>
-                    </div>
+          <!-- -- Element 6 - Collection -->
+          <div class="element-item">
+            <h3>Element 6 - Collection</h3>
+            <div class="collection-container">
+              <div class="collection-item">
+                <img src="collection-1.jpg" alt="mono-blue-abstract">
+                <div class="collection-text">
+                  <h3>Blue</h3>
                 </div>
+              </div>
+              <div class="collection-item">
+                <img src="collection-2.jpg" alt="color-abstract">
+                <div class="collection-text">
+                  <h3>Color</h3>
+                </div>
+              </div>
+              <div class="collection-item">
+                <img src="collection-3.jpg" alt="black-white-abstract">
+                <div class="collection-text">
+                  <h3>Mono</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- -- Element 5 - ToggleList -->
+          <div class="element-item">
+            <h3>Element 5 - Night Mode Toggle</h3>
+              <div class="night-mode-toggle">
+                <div>
+                <h4>Method 1 - HTML only</h4>
+                <input type="checkbox" id="darkMode">
+                <label for="darkMode">Lights off</label>
+                <div class="day-mode">
+                  <h4>I am a Title</h4>
+                  <p>I am the important text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut illum, earum quasi unde distinctio alias rem totam a perspiciatis velit deserunt rerum fugit aliquam corporis saepe praesentium asperiores mollitia!
+                  </p>
+                </div>
+                <div class="night-mode">
+                  <h4>I am a Title</h4>
+                  <p>I am the important text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut illum, earum quasi unde distinctio alias rem totam a perspiciatis velit deserunt rerum fugit aliquam corporis saepe praesentium asperiores mollitia!
+                  </p>
+                </div>
+                <div>
+                  <h4>Method 2 - with script</h4>
+                  <div>
+                    <button class="toggle-button-on" onclick="toggleNightMode()">Lights off</button>
+                      <div class="day-mode2">
+                        <h4>I am a Title</h4>
+                        <p>I am the important text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut illum, earum quasi unde distinctio alias rem totam a perspiciatis velit deserunt rerum fugit aliquam corporis saepe praesentium asperiores mollitia!
+                        </p>
+                      </div>
+                  </div>
+              </div>
             </div>
           </div>
           <script>
@@ -63,20 +89,22 @@
 
           <!-- -- Element 4 - ToggleList -->
 
-          <h3>Element 4 - Toggle List</h3>
-          <div class="toggle-list">
-            <input type="checkbox" id="toggleList">
-            <label for="toggleList">Hide Them</label>
-              <ul class="hidden-list">
-                <li>Hide me 1</li>
-                <li>Hide me 2</li>
-                <li>Hide me 3</li>
-                <li>Hide me 4</li>
-              </ul>
+          <div class="element-item">
+            <h3>Element 4 - Toggle List</h3>
+            <div class="toggle-list">
+              <input type="checkbox" id="toggleList">
+              <label for="toggleList">Hide Them</label>
+                <ul class="hidden-list">
+                  <li>Hide me 1</li>
+                  <li>Hide me 2</li>
+                  <li>Hide me 3</li>
+                  <li>Hide me 4</li>
+                </ul>
+            </div>
           </div>
 
           <!-- -- Element 3 - Newsletter -- -->
-          <div class="newsletter">
+          <div class="element-item">
             <h3>Element 3 - Newsletter</h3>
              <!-- -- newsletter 1 -- -->
                 <div class="newsletter-container1">
@@ -94,7 +122,7 @@
                       <label for="email">(label for texting)</label>
                     </div>
                     <div>
-                      <input type="email" placeholder="Enter your fav email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ oninput="setCustomValidity('')" 
+                      <input type="email" placeholder="Enter your fav email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$`" oninput="setCustomValidity('')">
                       oninvalid="setCustomValidity('This doesn\'t look like an Email address, bro.')" required  />
                       <button id="hero-btn">Keep me updated</button id="hero-btn">
                     </div>
@@ -116,36 +144,39 @@
                 </div>
           </div>
           <!-- -- Element 2 - Motion on Scroll -- -->
-          <div class="element2">
+          <div class="element-item">
             <h3>Element 2 - Motion on Scroll</h3>
               <div class="element2-container">
-                <div class="element2-object"></div>
-                <div class="stripe">
-                  SZIASZTOK
+                <div class="element2-container-2">
+                  <!-- ball -->
+                  <div class="element2-object"></div>
+                  <div class="stripe">SZIASZTOK</div>
                 </div>
               </div>
           </div>
           <!-- -- Element 1 - Motion Text -- -->
-            <div class="element1">
-              <h3>Running Text when Hovering</h3>
-                <div class="element1-container">
-                  <div class="motion-text--container">
-                    <div  class="motion-text1">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis provident ratione facilis quisquam nesciunt. gitExpedita sequi numquam nisi similique facere? Mollitia repellendus provident molestias atque id labore eos exercitationem architecto nesciunt aliquam voluptatum amet sapiente officia, reiciendis qui dolorum perferendis aperiam tempora, inventore excepturi, vitae accusantium vero earum. Doloremque rerum commodi libero ad nam, maiores ut iste consequuntur similique cupiditate repudiandae voluptatum omnis. Porro deleniti magni quia molestias laborum maiores vero eveniet ratione ipsa, velit veritatis dolore fuga. Dicta harum neque fuga debitis explicabo odio perferendis laborum. Voluptas nemo laudantium cum! Eaque dolorem, quod culpa magni laborum voluptates? Labore, laborum.
+          <div class="element-item">
+              <div class="adjust-element1">
+                <h3>Element 1 - Running Text when Hovering</h3>
+                  <div class="element1-container">
+                    <div class="motion-text--container">
+                      <div  class="motion-text1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis provident ratione facilis quisquam nesciunt. gitExpedita sequi numquam nisi similique facere? Mollitia repellendus provident molestias atque id labore eos exercitationem architecto nesciunt aliquam voluptatum amet sapiente officia, reiciendis qui dolorum perferendis aperiam tempora, inventore excepturi, vitae accusantium vero earum. Doloremque rerum commodi libero ad nam, maiores ut iste consequuntur similique cupiditate repudiandae voluptatum omnis. Porro deleniti magni quia molestias laborum maiores vero eveniet ratione ipsa, velit veritatis dolore fuga. Dicta harum neque fuga debitis explicabo odio perferendis laborum. Voluptas nemo laudantium cum! Eaque dolorem, quod culpa magni laborum voluptates? Labore, laborum.
+                      </div>
+                    </div>
+                    <div class="motion-text--container">
+                      <div  class="motion-text2">
+                        Perspiciatis provident ratione facilis quisquam nesciunt. Expedita sequi numquam nisi similique facere? Mollitia repellendus provident molestias atque id labore eos exercitationem architecto nesciunt aliquam voluptatum amet sapiente officia, reiciendis qui dolorum perferendis aperiam tempora, inventore excepturi, vitae accusantium vero earum. Doloremque rerum commodi libero ad nam, maiores ut iste consequuntur similique cupiditate repudiandae voluptatum omnis. Porro deleniti magni quia molestias laborum maiores vero eveniet ratione ipsa, velit veritatis dolore fuga. Dicta harum neque fuga debitis explicabo odio perferendis laborum. Voluptas nemo laudantium cum! Eaque dolorem, quod culpa magni laborum voluptates? Labore, laborum.
+                      </div>
+                    </div>
+                    <div class="motion-text--container">
+                      <div  class="motion-text3">
+                        Expedita sequi numquam nisi similique facere? Mollitia repellendus provident molestias atque id labore eos exercitationem architecto nesciunt aliquam voluptatum amet sapiente officia, reiciendis qui dolorum perferendis aperiam tempora, inventore excepturi, vitae accusantium vero earum. Doloremque rerum commodi libero ad nam, maiores ut iste consequuntur similique cupiditate repudiandae voluptatum omnis. Porro deleniti magni quia molestias laborum maiores vero eveniet ratione ipsa, velit veritatis dolore fuga. Dicta harum neque fuga debitis explicabo odio perferendis laborum. Voluptas nemo laudantium cum! Eaque dolorem, quod culpa magni laborum voluptates? Labore, laborum.
+                      </div>
                     </div>
                   </div>
-                  <div class="motion-text--container">
-                    <div  class="motion-text2">
-                      Perspiciatis provident ratione facilis quisquam nesciunt. Expedita sequi numquam nisi similique facere? Mollitia repellendus provident molestias atque id labore eos exercitationem architecto nesciunt aliquam voluptatum amet sapiente officia, reiciendis qui dolorum perferendis aperiam tempora, inventore excepturi, vitae accusantium vero earum. Doloremque rerum commodi libero ad nam, maiores ut iste consequuntur similique cupiditate repudiandae voluptatum omnis. Porro deleniti magni quia molestias laborum maiores vero eveniet ratione ipsa, velit veritatis dolore fuga. Dicta harum neque fuga debitis explicabo odio perferendis laborum. Voluptas nemo laudantium cum! Eaque dolorem, quod culpa magni laborum voluptates? Labore, laborum.
-                    </div>
-                  </div>
-                  <div class="motion-text--container">
-                    <div  class="motion-text3">
-                      Expedita sequi numquam nisi similique facere? Mollitia repellendus provident molestias atque id labore eos exercitationem architecto nesciunt aliquam voluptatum amet sapiente officia, reiciendis qui dolorum perferendis aperiam tempora, inventore excepturi, vitae accusantium vero earum. Doloremque rerum commodi libero ad nam, maiores ut iste consequuntur similique cupiditate repudiandae voluptatum omnis. Porro deleniti magni quia molestias laborum maiores vero eveniet ratione ipsa, velit veritatis dolore fuga. Dicta harum neque fuga debitis explicabo odio perferendis laborum. Voluptas nemo laudantium cum! Eaque dolorem, quod culpa magni laborum voluptates? Labore, laborum.
-                    </div>
-                  </div>
-                </div>
-            </div>
+              </div>
+          </div>
 
         </section>
 
@@ -156,7 +187,7 @@
             <div class="signature-container">
                <!-- SIGNATURE TEMPLATE 1 -->
 
-              <div class="signature-item" style="";>
+              <div class="signature-item";>
                 <h3>Email Signature 1</h3>
                 <table width="600px" height="300px" style="background-color: #f0f0f0; margin-inline:auto">
                   <tr>
@@ -197,7 +228,7 @@
                             <div style=" position: absolute; z-index: 0; background-color: rgb(57 58 58);width: 100%; ; top: 44%; left: 0px; right: 0px; bottom: 0px; ">
                             </div>
                             <div style="position: sticky; z-index: 1;">
-                              <p style=";">
+                              <p>
                                   <a href="https://www.your-company.com/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.your-company.com/&amp;source=gmail&amp;ust=1701769121602000&amp;usg=AOvVaw164Fn2o7QJOiI6CO9lom8t">
                                     <img alt="Logo" style="width:100%; height: 100%; max-width: 200px; border-radius: 50%; padding: 40px" src="logo 01.png"></a>
                               </p>
