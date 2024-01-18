@@ -19,6 +19,25 @@
 
         <section class="element-container">
           <h2>Elements Practice</h2>
+          <!-- -- Element 7 - Text Running in Circle -->
+          <div class="element-item">
+            <h3>Element 7 - Text Running in Circle</h3>
+                <div class="circle-box">
+                    <div id="circleText"></div>
+                </div>
+                  <script>
+                    var text = "Am I spinning? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, alias.";
+                    var container = document.getElementById('circleText');
+                    for (var i = 0; i < text.length; i++) {
+                      var letter = document.createElement('span');
+                      var rotation = 360 * i / text.length;
+                      letter.style.transform = 'rotate(' + rotation + 'deg)';
+                      letter.innerHTML = text[i];
+                      container.appendChild(letter);
+                    }
+                  </script>
+          </div>
+        
           <!-- -- Element 6 - Collection -->
           <div class="element-item">
             <h3>Element 6 - Collection</h3>
@@ -106,42 +125,44 @@
           <!-- -- Element 3 - Newsletter -- -->
           <div class="element-item">
             <h3>Element 3 - Newsletter</h3>
-             <!-- -- newsletter 1 -- -->
-                <div class="newsletter-container1">
-                  <p>Stay updated with the latest news, events, and exclusive offers by subscribing to our newsletter. Enter your email address below:</p>
-                  <form action="#" method="post">
-                    <label for="email">(label for texting)</label>
-                    <input type="email" placeholder="Enter your fav email address"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="This doesn't look like an Email address, bro."/>
-                    <button id="hero-btn">Subscribe</button id="hero-btn">
-                  </form>
-                </div>
-                <div class="newsletter-container2">
-                  <p>Stay updated with the latest news, events, and exclusive offers by subscribing to our newsletter. Enter your email address below:</p>
-                  <form action="#" method="post">
-                    <div>
+             <div class="newsletter">
+               <!-- -- newsletter 1 -- -->
+                  <div class="newsletter-container1">
+                    <p>Stay updated with the latest news, events, and exclusive offers by subscribing to our newsletter. Enter your email address below:</p>
+                    <form action="#" method="post">
                       <label for="email">(label for texting)</label>
-                    </div>
-                    <div>
-                      <input type="email" placeholder="Enter your fav email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$`" oninput="setCustomValidity('')">
-                      oninvalid="setCustomValidity('This doesn\'t look like an Email address, bro.')" required  />
-                      <button id="hero-btn">Keep me updated</button id="hero-btn">
-                    </div>
-                  </form>
-                </div>
-                <div class="newsletter-container3">
-                  <div class="newsletter-container3--subcontainer">
-                    <div class="loop-text">
-                      <p>Stay updated with the latest news, events, and exclusive offers by subscribing to our newsletter. Enter your email address below:</p>
-                    </div>
-                    <div>
-                      <form action="#" method="post">
-                        <label for="email"></label>
-                        <input type="email" placeholder="Enter your fav email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="This doesn't look like an Email address, bro."/>
-                        <button id="hero-btn">Subscribe</button id="hero-btn">
-                      </form>
+                      <input type="email" placeholder="Enter your fav email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="This doesn't look like an Email address, bro."/>
+                      <button id="hero-btn">Subscribe</button id="hero-btn">
+                    </form>
+                  </div>
+                  <div class="newsletter-container2">
+                    <p>Stay updated with the latest news, events, and exclusive offers by subscribing to our newsletter. Enter your email address below:</p>
+                    <form action="#" method="post">
+                      <div>
+                        <label for="email">(label for texting)</label>
+                      </div>
+                      <div>
+                        <input type="email" placeholder="Enter your fav email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$`" oninput="setCustomValidity('')"
+                        oninvalid="setCustomValidity('This doesn\'t look like an Email address, bro.')" required  />
+                        <button id="hero-btn">Keep me updated</button id="hero-btn">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="newsletter-container3">
+                    <div class="newsletter-container3--subcontainer">
+                      <div class="loop-text">
+                        <p>Stay updated with the latest news, events, and exclusive offers by subscribing to our newsletter. Enter your email address below:</p>
+                      </div>
+                      <div>
+                        <form action="#" method="post">
+                          <label for="email"></label>
+                          <input type="email" placeholder="Enter your fav email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="This doesn't look like an Email address, bro."/>
+                          <button id="hero-btn">Subscribe</button id="hero-btn">
+                        </form>
+                      </div>
                     </div>
                   </div>
-                </div>
+             </div>
           </div>
           <!-- -- Element 2 - Motion on Scroll -- -->
           <div class="element-item">
