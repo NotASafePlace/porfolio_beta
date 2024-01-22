@@ -32,9 +32,62 @@ section{
 }
 
 .element-item{
-    margin: 40px 0;
+    margin: 70px 0;
     /* overflow: hidden; */
+    position:relative;
+
 }
+
+ /* ------ ELEMENT 8 ----- */
+
+.newsletter-popup{
+    display: block;
+    height: 1000px;
+}
+
+.page-content{
+    background-color: #ecf8efbb;
+    color: darkslategrey;
+    padding: 3em 2.2em;
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.popup{
+    background-color: #f0f0f0;
+    color: darkslategrey;
+    width: 80%;
+    min-width: 400px;
+    position: absolute;
+    top: 250px;
+    margin: 70px;
+    display: block;
+}
+
+.popup p{
+    padding: 20px;
+
+}
+
+.popup .newsletter{
+    padding: 0 30px 10px 0px;
+}
+
+.popup .newsletter-container3{
+    display: block;
+}
+
+#close-btn{
+    background-color: #f0f0f0;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    width: 2em;
+    margin-left: 87%;
+    cursor: pointer;
+}
+
 
  /* ------ ELEMENT 7 ----- */
 
@@ -522,11 +575,22 @@ section{
 
  
  /* ---- SIGNATURES ----- */
+
+
+ .hide-email-template{
+    margin: 10px 0;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+ }
 .signature-container{
     color: #1c132d;
     margin-inline: auto;
+    display: none;
 }
-
+.signature-container-hidden{
+    display: block;
+}
 
 .signature-item{
     max-width: 100%;

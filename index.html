@@ -19,6 +19,45 @@
 
         <section class="element-container">
           <h2>Elements Practice</h2>
+          <!-- -- Element 8 - Newsletter Pop Up -->
+          <div class="element-item">
+            <h3>Element 8 - Newsletter Pop Up</h2>
+            <div class="newsletter-popup">
+              <div class="page-content">
+                <h1 class="">I am a Heading 1</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dicta dolor, aperiam sapiente voluptate dignissimos tempora cum ab in natus cumque autem! Rerum quam numquam repellat deserunt, fugit maxime velit hic autem, voluptatem officiis et.<br><br> Odio excepturi eligendi pariatur necessitatibus sed! Est, quidem porro. Beatae hic recusandae aliquam molestias nobis sed autem nihil quod saepe deleniti distinctio similique minus vitae rerum aperiam optio mollitia, eius natus adipisci dicta, laboriosam doloribus dolor deserunt? Quaerat aliquid explicabo maxime dolore laboriosam, at iusto nihil laudantium repudiandae sed veritatis reiciendis unde officia, ullam blanditiis, tempore impedit. Assumenda iusto saepe doloremque, hic nemo perspiciatis ipsam quo exercitationem autem nam dolores voluptatum inventore sint magnam, sed sit molestiae animi ut facere ducimus, eos suscipit aut! Placeat dolorem deleniti laborum adipisci quasi ratione quidem distinctio, possimus ducimus natus temporibus deserunt, rerum officiis aliquid fugit aliquam id harum labore recusandae minus assumenda! <br><br>
+                
+                <h2 class="">Why am I a Heading 2</h2>
+                Maiores ipsum recusandae iure provident tempora quas exercitationem hic suscipit numquam ipsa, perspiciatis explicabo similique nemo neque voluptatibus iste fugit, magnam aut? Exercitationem, eaque. Quo perspiciatis quas enim veritatis fugiat dolore, atque libero incidunt ullam maxime alias quia recusandae perferendis sequi quisquam unde consequatur vitae voluptas laboriosam suscipit, error provident! Praesentium iure ea illo exercitationem officia voluptate, sunt quia! Vitae incidunt natus doloribus laudantium minima animi, non similique unde aliquid corporis vel id itaque, eum nemo maiores libero illo suscipit atque consequuntur optio. Commodi cum iste hic, est modi doloremque suscipit numquam aliquid repellat excepturi ullam harum, neque nihil. Soluta, necessitatibus? Accusantium amet dolorem labore eius dolore voluptate nisi iusto vitae molestiae deserunt ipsam eos, neque voluptas commodi, nesciunt beatae expedita placeat autem at temporibus laborum! Minima, repellat veniam odio rem ipsa ipsam? Temporibus, pariatur delectus? Aspernatur, illo quos harum aut obcaecati consequuntur voluptates dolorum provident at temporibus quaerat officiis, minus officia dolor voluptate qui facilis eveniet dolorem, distinctio similique omnis? Debitis id, voluptatem minus eligendi velit doloremque, laudantium quasi natus iusto assumenda esse non nulla atque cum eveniet perferendis? Distinctio odit corporis illo ducimus voluptate quam facere enim perferendis eligendi, eveniet, debitis id perspiciatis beatae quisquam quo. Dicta ex accusantium non inventore beatae modi, quos illo qui cumque doloribus voluptates aperiam neque quasi vero! Doloribus ad atque architecto inventore beatae autem ab eum ea! Facere sed fugiat explicabo. <br><br>Quis at modi sit facere architecto veritatis illo debitis id et ducimus aut quia optio explicabo, corporis dolor molestiae distinctio repellat tempora delectus numquam.</p>
+              </div>
+          
+            </div>
+            <div class="popup">
+                <button id="close-btn" class="close-btn">x</button>
+                <label for="close-btn"></label>
+                <p>Subscribe to be the first one to find out our next gig!</p>
+                  <div class="newsletter">
+                    <div class="newsletter-container3">
+                      <form action="#" method="post">
+                          <label for="email"></label>
+                          <input type="email" placeholder="Enter your fav email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="This doesn't look like an Email address, bro."/>
+                          <button id="hero-btn">Subscribe</button id="hero-btn">
+                      </form>
+                    </div>
+                  </div>
+            </div>
+            <script>
+              document.querySelector('.close-btn').addEventListener('click', 
+              function(){
+                document.querySelector('.popup').style.display="none";
+                console.log("but it's working.")
+              }
+              )
+
+            </script>
+          </div>
+
+
           <!-- -- Element 7 - Text Running in Circle -->
           <div class="element-item">
             <h3>Element 7 - Text Running in Circle</h3>
@@ -205,6 +244,16 @@
 
         <section class="signature">
           <h2>Email Signatures</h2>
+          <button class="hide-email-template">Hide/show Email Templates</button>
+          <script>
+            document.querySelector('.hide-email-template').addEventListener('click',
+
+            function () {
+              document.querySelector('.signature-container').classList.toggle('signature-container-hidden');
+          }
+            )
+          </script>
+
             <div class="signature-container">
                <!-- SIGNATURE TEMPLATE 1 -->
 
